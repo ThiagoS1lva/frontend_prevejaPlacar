@@ -31,7 +31,7 @@ function App() {
     <div id="tabela" className={Styles.container}>
       {data ? (
         <div className={Styles.box}>
-          <h2 className={Styles.title}>Tabela de pontos - Brasileirão 2024</h2>
+          <h2 className={Styles.title}>Previsão de pontos - Brasileirão 2024</h2>
           <table className={Styles.table}>
             <thead>
               <tr className={Styles.titulosTabela}>

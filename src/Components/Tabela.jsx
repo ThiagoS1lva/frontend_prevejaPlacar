@@ -53,7 +53,7 @@ function App() {
                   <tr key={index} className={rowClass}>
                     <td>
                       <img 
-                        src={`/images/${item.Time.toLowerCase()}.png`}
+                        src={`/images/${item.Time}.png`}
                         alt={item.Time}
                         style={{ width: '30px', height: 'auto' }}
                       />

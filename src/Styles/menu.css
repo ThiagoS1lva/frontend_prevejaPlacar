@@ -49,6 +49,10 @@ header .nav-btn {
     font-size: 1.5rem;
 }
 
+header a {
+    cursor: pointer;
+}
+
 header div,
 nav {
 	display: flex;

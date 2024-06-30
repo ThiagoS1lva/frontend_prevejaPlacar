@@ -2,7 +2,7 @@ import {FaBars, FaTimes} from 'react-icons/fa'
 import { GiSoccerKick } from "react-icons/gi";
 import {useRef} from 'react'
 import '../Styles/menu.css'
-
+import { Link } from 'react-scroll'
 
 function Menu() {
   const navRef = useRef();
@@ -12,16 +12,15 @@ function Menu() {
   }
   
   return (
-    <header>
+    <header id="home">
       <div>
       <GiSoccerKick size={40}/>
       <h3>PreVejaPlacar</h3>
       </div>
       <nav ref={navRef}>
-        <a href="/#">Home</a>
-        <a href="/#">Sobre</a>
-        <a href="/#">Tabela Brasileirão</a>
-        <a href="/#">Contato</a>
+        <Link to="home" smooth={true} duration={500}>Home</Link>
+        <Link to="tabela" smooth={true} duration={500}>Tabela Brasileirão</Link>
+        <Link to="contato" smooth={true} duration={500}>Contato</Link>
         <button className='nav-btn nav-close-btn' onClick={showNavbar}>
           <FaTimes/>
         </button>

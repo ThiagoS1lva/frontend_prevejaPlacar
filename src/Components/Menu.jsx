@@ -13,7 +13,10 @@ function Menu() {
   
   return (
     <header>
+      <div>
       <GiSoccerKick size={40}/>
+      <h3>PreVejaPlacar</h3>
+      </div>
       <nav ref={navRef}>
         <a href="/#">Home</a>
         <a href="/#">Sobre</a>

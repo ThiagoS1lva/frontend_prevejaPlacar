@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 1% auto 0 auto;
+    justify-content: space-between;
+}
+
+.img {
+    width: 50vw; /* A imagem ocupará 100% da largura da div img */
+}
+
+.img img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do seu container */
+    height: auto; /* Altura automática para manter a proporção */
+    border-radius: 3px;
+background: #e0e0e0;
+box-shadow:  11px 11px 40px #8b8b8b,
+             -11px -11px 40px #ffffff;
+}
+
+.text {
+    width: 50vw;
+}
+
+.text h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    width: 90%;
+    margin: 0 auto 5% auto;
+    text-align: center;
+}
+.text p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+.text span {
+    font-weight: bold;
+    color: #C6FD00;
+    background-color: black;
+    padding: 0.6%;
+}

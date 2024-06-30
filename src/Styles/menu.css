@@ -6,7 +6,7 @@ header {
     height: 80px;
     padding: 0 2rem;
     background-color: #212676;
-    color: wheat;
+    color: white;
 }
 
 nav a {
@@ -16,6 +16,7 @@ nav a {
     text-decoration: none;
     position: relative; 
     transition: color 0.2s; 
+    text-transform: uppercase;
 }
 
 nav a::after {

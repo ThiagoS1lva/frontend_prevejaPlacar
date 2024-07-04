@@ -48,7 +48,6 @@ function App() {
                 } else if (index >= data.length - 4) {
                   rowClass = Styles.vermelho;
                 }
-  
                 return (
                   <tr key={index} className={rowClass}>
                     <td>

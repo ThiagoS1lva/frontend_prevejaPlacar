@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import TimeSelect from "../Components/SelecionarTime";
-import axios from "axios"; // Se estiver usando Axios
+import axios from "axios";
 import Styles from '../Styles/Heatmap.module.css'
 
 const App = () => {
@@ -41,8 +41,7 @@ const App = () => {
 
   const gerarHeatmap = () => {
     if (timeCasa && timeFora) {
-      axios
-        .post(
+      axios.post(
           "https://b5574f17-8c93-4c4c-a372-476de94e1845-00-1vio8ueb0bv8m.janeway.replit.dev/heatmap",
           {
             time_casa: timeCasa,
@@ -51,11 +50,9 @@ const App = () => {
           { responseType: "arraybuffer" }
         )
         .then((response) => {
-          // Criar um Blob a partir dos dados recebidos
+
           const blob = new Blob([response.data], { type: "image/png" });
-          // Criar uma URL para o Blob
           const imageUrl = URL.createObjectURL(blob);
-          // Atualizar o estado para exibir a imagem
           setHeatmapUrl(imageUrl);
         })
         .catch((error) => {

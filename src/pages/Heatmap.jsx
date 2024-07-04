@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import TimeSelect from "../Components/SelecionarTime";
+import TeamSelect from "../Components/SelecionarTime";
 import axios from "axios";
 import Styles from '../Styles/Heatmap.module.css'
 
@@ -54,6 +54,7 @@ const App = () => {
           const blob = new Blob([response.data], { type: "image/png" });
           const imageUrl = URL.createObjectURL(blob);
           setHeatmapUrl(imageUrl);
+          console.log(imageUrl)
         })
         .catch((error) => {
           console.error("Erro ao chamar a API:", error);
@@ -67,12 +68,12 @@ const App = () => {
     <div className={Styles.container}>
         <h1>Gerador de Heatmap</h1>
       <div className={Styles.select}>
-        <TimeSelect
+        <TeamSelect
           label="Escolha o time da casa"
           options={options}
           onChange={handleTimeCasaChange}
         />
-        <TimeSelect
+        <TeamSelect
           label="Escolha o time visitante"
           options={options}
           onChange={handleTimeForaChange}

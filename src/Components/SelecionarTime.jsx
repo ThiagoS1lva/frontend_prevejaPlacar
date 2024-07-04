@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const TimeSelect = ({ label, options, onChange }) => {
+const TeamSelect = ({ label, options, onChange }) => {
   const handleChange = (e) => {
     onChange(e.target.value);
   };
@@ -17,4 +17,8 @@ const TimeSelect = ({ label, options, onChange }) => {
   );
 };
 
-export default TimeSelect;
+export default TeamSelect;
+
+
+
+

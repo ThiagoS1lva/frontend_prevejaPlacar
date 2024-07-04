@@ -2,6 +2,8 @@
 
 Repositório do projeto de Previsão de Pontos e Gerador de Heatmap para o Brasileirão 2024! 🎉 Este projeto utiliza React.js para apresentar uma tabela de previsão de pontos dos times do Brasileirão e também permite a geração de heatmaps para partidas específicas.
 
+hospedagem: https://frontendprevejaplacar.vercel.app/
+
 ## 📋 Visão Geral
 
 Este projeto é dividido em duas principais funcionalidades:
